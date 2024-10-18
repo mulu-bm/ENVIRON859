@@ -69,9 +69,6 @@ fileObj.close() #Close the file
 #Save the contents of the first line in the list of lines to the variable "loiteringHeaderLineString"
 loiteringHeaderLineString = loiteringList[0]
 
-#Print the contents of the headerLine
-print(loiteringHeaderLineString)
-
 #Split the loiteringHeaderLineString into a list of header items
 loiteringHeaderItems = loiteringHeaderLineString.split(',')
 
@@ -119,7 +116,7 @@ for lines in loiteringList[1:]:
         
         #Extract fleet value using transshipmentmmsi and print statement 
         fleetValue = vesselDict[transshipmentmmsi]
-        print(f'Vessel #{transshipmentmmsi} {startLong} flies the flag of {fleetValue}')
+        print(f'Vessel #{transshipmentmmsi} flies the flag of {fleetValue}')
     else:
         continue
 
